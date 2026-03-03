@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 260,
+              "x": 190,
               "y": 750
             },
             "size": {
@@ -255,130 +255,211 @@
             }
           },
           {
-            "position": {
-              "x": 564,
-              "y": 553
-            },
-            "size": {
-              "width": 150,
-              "height": 60
-            },
+            "shape": "flow",
             "attrs": {
-              "text": {
-                "text": "Payment Gateway"
-              },
-              "body": {
+              "line": {
                 "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
                 "strokeDasharray": null
               }
             },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
-                },
-                {
-                  "group": "right",
-                  "id": "42729cfb-684d-4237-93a0-622a8face702"
-                },
-                {
-                  "group": "bottom",
-                  "id": "68ad3c1e-af2e-493a-9950-d5a1803db4ab"
-                },
-                {
-                  "group": "left",
-                  "id": "b6001925-795f-45e3-9175-93e024e3d2e9"
-                }
-              ]
-            },
-            "id": "88a6fc88-076d-40e8-88be-b434efddbe2d",
-            "zIndex": 3,
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
             "data": {
-              "type": "tm.Actor",
-              "name": "Payment Gateway",
+              "type": "tm.Flow",
+              "name": "Submits order details",
               "description": "",
-              "isTrustBoundary": false,
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Submits order details"
+            ],
+            "id": "e8e78c9e-4f2c-49f9-9ca6-6830506f78a5",
+            "source": {
+              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
+              "port": "42729cfb-684d-4237-93a0-622a8face702"
+            },
+            "target": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Initiates payment request\n(with tokenized information)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Initiates payment request\n(with tokenized information)"
+            ],
+            "id": "f68e97cf-3663-42cc-bdae-015c36ab8755",
+            "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "5487aae2-9e48-4797-bd55-68c849576041"
+            },
+            "target": {
+              "cell": "40f3c217-e4f8-49f8-a248-d7a47a04833d",
+              "port": "68ad3c1e-af2e-493a-9950-d5a1803db4ab"
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 610
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends transaction response\n(success/failure)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends transaction response\n(success/failure)"
+            ],
+            "id": "baf4e81a-4729-4f72-9324-c35e7426412b",
+            "source": {
+              "cell": "40f3c217-e4f8-49f8-a248-d7a47a04833d",
+              "port": "68ad3c1e-af2e-493a-9950-d5a1803db4ab"
+            },
+            "target": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "5487aae2-9e48-4797-bd55-68c849576041"
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "e4a0b201-2105-4a8b-962b-7578a97c5884",
+            "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "7c231b0a-70cd-4990-aeca-3c18240af755"
+            },
+            "target": {
+              "cell": "fa211ede-1804-4d8e-b6d2-a7967619ad83",
+              "port": "63128f8a-7064-404e-9d0f-c2b43094edd2"
+            },
+            "vertices": []
           },
           {
             "position": {
-              "x": 850,
+              "x": 938,
               "y": 755
             },
             "size": {
-              "width": 150,
-              "height": 70
+              "width": 120,
+              "height": 60
             },
             "attrs": {
               "text": {
@@ -477,8 +558,8 @@
                 }
               ]
             },
-            "id": "50885254-ce55-4bd2-a9ba-c7b6a2797afa",
-            "zIndex": 4,
+            "id": "fa211ede-1804-4d8e-b6d2-a7967619ad83",
+            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -496,60 +577,120 @@
             }
           },
           {
-            "shape": "flow",
+            "position": {
+              "x": 554,
+              "y": 360
+            },
+            "size": {
+              "width": 140,
+              "height": 60
+            },
             "attrs": {
-              "line": {
+              "text": {
+                "text": "Payment Gateway"
+              },
+              "body": {
                 "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
+                },
+                {
+                  "group": "right",
+                  "id": "42729cfb-684d-4237-93a0-622a8face702"
+                },
+                {
+                  "group": "bottom",
+                  "id": "68ad3c1e-af2e-493a-9950-d5a1803db4ab"
+                },
+                {
+                  "group": "left",
+                  "id": "b6001925-795f-45e3-9175-93e024e3d2e9"
+                }
+              ]
+            },
+            "id": "40f3c217-e4f8-49f8-a248-d7a47a04833d",
+            "zIndex": 12,
             "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
+              "type": "tm.Actor",
+              "name": "Payment Gateway",
               "description": "",
-              "outOfScope": false,
               "isTrustBoundary": false,
+              "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "bf886e61-338a-401e-be73-a3aca5ecd9f6",
-            "source": {
-              "x": 400,
-              "y": 780
-            },
-            "target": {
-              "x": 560,
-              "y": 840
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+              "providesAuthentication": false,
+              "threats": []
             }
           }
         ]
