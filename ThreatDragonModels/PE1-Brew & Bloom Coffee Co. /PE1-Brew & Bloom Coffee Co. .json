@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 190,
-              "y": 750
+              "x": 670,
+              "y": -15
             },
             "size": {
               "width": 140,
-              "height": 70
+              "height": 50
             },
             "attrs": {
               "text": {
@@ -136,8 +136,8 @@
           },
           {
             "position": {
-              "x": 564,
-              "y": 730
+              "x": 1154,
+              "y": -45
             },
             "size": {
               "width": 120,
@@ -299,7 +299,12 @@
               "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
               "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 990,
+                "y": -30
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -348,8 +353,8 @@
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 610
+                "x": 1130,
+                "y": -160
               }
             ]
           },
@@ -400,10 +405,109 @@
             },
             "vertices": [
               {
-                "x": 750,
-                "y": 600
+                "x": 1340,
+                "y": -170
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends order confirmation &\nstatus update",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends order confirmation &\nstatus update"
+            ],
+            "id": "5dcf22ad-72fd-4187-80a1-aac9a7daee79",
+            "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
+            },
+            "target": {
+              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
+              "port": "42729cfb-684d-4237-93a0-622a8face702"
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Logs in &\nRequests incoming orders",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Logs in &\nRequests incoming orders"
+            ],
+            "id": "af50895b-b2c7-44be-9aa9-3c4ba9f30d74",
+            "source": {
+              "cell": "1f89fbaa-4b71-4b54-9c85-bdea5cf28279",
+              "port": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
+            },
+            "target": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -441,7 +545,7 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "e4a0b201-2105-4a8b-962b-7578a97c5884",
+            "id": "1073ce5a-8c4d-4aef-971b-eb72d0054236",
             "source": {
               "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
               "port": "7c231b0a-70cd-4990-aeca-3c18240af755"
@@ -450,12 +554,79 @@
               "cell": "fa211ede-1804-4d8e-b6d2-a7967619ad83",
               "port": "63128f8a-7064-404e-9d0f-c2b43094edd2"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1430,
+                "y": 10
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Records order details &\npayment status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Records order details &\npayment status"
+            ],
+            "id": "e4a0b201-2105-4a8b-962b-7578a97c5884",
+            "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
+            },
+            "target": {
+              "cell": "fa211ede-1804-4d8e-b6d2-a7967619ad83",
+              "port": "f9cd1fbc-b844-4dc6-bb02-374e4beb5618"
+            },
+            "vertices": [
+              {
+                "x": 1410,
+                "y": 70
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
-              "x": 938,
-              "y": 755
+              "x": 1588,
+              "y": -15
             },
             "size": {
               "width": 120,
@@ -578,8 +749,8 @@
           },
           {
             "position": {
-              "x": 554,
-              "y": 360
+              "x": 1144,
+              "y": -410
             },
             "size": {
               "width": 140,
@@ -684,6 +855,123 @@
             "data": {
               "type": "tm.Actor",
               "name": "Payment Gateway",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1179,
+              "y": 270
+            },
+            "size": {
+              "width": 70,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Barista"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
+                },
+                {
+                  "group": "right",
+                  "id": "42729cfb-684d-4237-93a0-622a8face702"
+                },
+                {
+                  "group": "bottom",
+                  "id": "68ad3c1e-af2e-493a-9950-d5a1803db4ab"
+                },
+                {
+                  "group": "left",
+                  "id": "b6001925-795f-45e3-9175-93e024e3d2e9"
+                }
+              ]
+            },
+            "id": "1f89fbaa-4b71-4b54-9c85-bdea5cf28279",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Barista",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
