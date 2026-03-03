@@ -563,9 +563,38 @@
               "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
               "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
             },
-            "vertices": [],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -573,7 +602,8 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -622,8 +652,8 @@
             },
             "vertices": [
               {
-                "x": 840,
-                "y": 115
+                "x": 900,
+                "y": 185
               }
             ]
           },
@@ -674,8 +704,8 @@
             },
             "vertices": [
               {
-                "x": 830,
-                "y": 65
+                "x": 890,
+                "y": 135
               }
             ]
           },
@@ -1515,11 +1545,11 @@
           },
           {
             "position": {
-              "x": 385,
-              "y": -105
+              "x": 400,
+              "y": -90
             },
             "size": {
-              "width": 100,
+              "width": 110,
               "height": 100
             },
             "attrs": {
@@ -1635,12 +1665,12 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": 380
+              "x": 400,
+              "y": 170.00000000000003
             },
             "size": {
-              "width": 110,
-              "height": 90
+              "width": 120,
+              "height": 110
             },
             "attrs": {
               "text": {
