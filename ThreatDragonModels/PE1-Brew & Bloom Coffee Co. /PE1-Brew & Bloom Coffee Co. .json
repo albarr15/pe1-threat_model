@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 600,
-              "y": -30
+              "x": 640,
+              "y": -180
             },
             "size": {
               "width": 140,
@@ -274,58 +274,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Submits order details",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Submits order details"
-            ],
-            "id": "e8e78c9e-4f2c-49f9-9ca6-6830506f78a5",
-            "source": {
-              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
-              "port": "42729cfb-684d-4237-93a0-622a8face702"
-            },
-            "target": {
-              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
-            },
-            "vertices": [
-              {
-                "x": 990,
-                "y": -30
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Initiates payment request\n(with tokenized information)",
               "description": "",
               "outOfScope": false,
@@ -356,17 +304,7 @@
                 "x": 1110,
                 "y": -230
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -440,58 +378,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sends order confirmation &\nstatus update",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Sends order confirmation &\nstatus update"
-            ],
-            "id": "5dcf22ad-72fd-4187-80a1-aac9a7daee79",
-            "source": {
-              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
-            },
-            "target": {
-              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
-              "port": "42729cfb-684d-4237-93a0-622a8face702"
-            },
-            "vertices": [
-              {
-                "x": 990,
-                "y": 20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Sends order list",
               "description": "",
               "outOfScope": false,
@@ -517,61 +403,10 @@
               "cell": "1f89fbaa-4b71-4b54-9c85-bdea5cf28279",
               "port": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
             },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Logs in &\nRequests incoming orders",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Logs in &\nRequests incoming orders"
-            ],
-            "id": "af50895b-b2c7-44be-9aa9-3c4ba9f30d74",
-            "source": {
-              "cell": "1f89fbaa-4b71-4b54-9c85-bdea5cf28279",
-              "port": "b6001925-795f-45e3-9175-93e024e3d2e9"
-            },
-            "target": {
-              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
-            },
             "vertices": [
               {
-                "x": 1070,
-                "y": 310
-              },
-              {
-                "x": 1100,
-                "y": 200
+                "x": 950,
+                "y": 100
               }
             ]
           },
@@ -622,12 +457,8 @@
             },
             "vertices": [
               {
-                "x": 1350,
-                "y": 350
-              },
-              {
-                "x": 1350,
-                "y": 220
+                "x": 990,
+                "y": 130
               }
             ]
           },
@@ -836,6 +667,162 @@
               {
                 "x": 1500,
                 "y": 65
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends order confirmation &\nstatus update",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sends order confirmation &\nstatus update"
+            ],
+            "id": "5dcf22ad-72fd-4187-80a1-aac9a7daee79",
+            "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "5487aae2-9e48-4797-bd55-68c849576041"
+            },
+            "target": {
+              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
+              "port": "42729cfb-684d-4237-93a0-622a8face702"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": -60
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submits order details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Submits order details"
+            ],
+            "id": "e8e78c9e-4f2c-49f9-9ca6-6830506f78a5",
+            "source": {
+              "cell": "fc9f1435-6f38-4240-a238-44ed2a728c30",
+              "port": "42729cfb-684d-4237-93a0-622a8face702"
+            },
+            "target": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "5487aae2-9e48-4797-bd55-68c849576041"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": -100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Logs in &\nRequests incoming orders",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Logs in &\nRequests incoming orders"
+            ],
+            "id": "af50895b-b2c7-44be-9aa9-3c4ba9f30d74",
+            "source": {
+              "cell": "1f89fbaa-4b71-4b54-9c85-bdea5cf28279",
+              "port": "ea8080e5-6a8e-4bf5-83aa-19a318559f42"
+            },
+            "target": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 120
               }
             ]
           },
@@ -1085,12 +1072,12 @@
           },
           {
             "position": {
-              "x": 1179,
-              "y": 450
+              "x": 660,
+              "y": 100
             },
             "size": {
-              "width": 70,
-              "height": 60
+              "width": 100,
+              "height": 120
             },
             "attrs": {
               "text": {
@@ -1198,7 +1185,10 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            }
+            },
+            "children": [
+              "1e5d9746-a1c4-4a39-9068-57e9b9accd08"
+            ]
           }
         ]
       }
