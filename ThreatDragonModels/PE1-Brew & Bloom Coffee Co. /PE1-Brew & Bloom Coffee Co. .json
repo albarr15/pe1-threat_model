@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 650,
-              "y": -260
+              "x": 510,
+              "y": -330
             },
             "size": {
               "width": 140,
@@ -461,8 +461,8 @@
             },
             "vertices": [
               {
-                "x": 960,
-                "y": -110
+                "x": 820,
+                "y": -180
               }
             ]
           },
@@ -513,8 +513,8 @@
             },
             "vertices": [
               {
-                "x": 1010,
-                "y": -140
+                "x": 870,
+                "y": -210
               }
             ]
           },
@@ -563,12 +563,17 @@
               "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
               "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
             },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 10
-              }
-            ]
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -721,8 +726,8 @@
             },
             "vertices": [
               {
-                "x": 940,
-                "y": 280
+                "x": 770,
+                "y": 200
               }
             ]
           },
@@ -773,8 +778,8 @@
             },
             "vertices": [
               {
-                "x": 1050,
-                "y": 320
+                "x": 870,
+                "y": 240
               }
             ]
           },
@@ -927,12 +932,6 @@
               "cell": "fa211ede-1804-4d8e-b6d2-a7967619ad83",
               "port": "63128f8a-7064-404e-9d0f-c2b43094edd2"
             },
-            "vertices": [
-              {
-                "x": 1530,
-                "y": -20
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -982,7 +981,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 1530,
+                "y": -20
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1207,8 +1212,8 @@
             },
             "vertices": [
               {
-                "x": 1315,
-                "y": 380
+                "x": 840,
+                "y": 410
               }
             ]
           },
@@ -1255,12 +1260,12 @@
             },
             "target": {
               "cell": "762d5983-0abe-4066-b575-4a6714e109f2",
-              "port": "80abfe69-c32f-4cb3-b303-56e999c684e8"
+              "port": "cde0bf30-401e-4385-9166-2ce38b082f95"
             },
             "vertices": [
               {
-                "x": 1425,
-                "y": 280
+                "x": 920,
+                "y": 440
               }
             ]
           },
@@ -1510,8 +1515,8 @@
           },
           {
             "position": {
-              "x": 390,
-              "y": 65
+              "x": 385,
+              "y": -105
             },
             "size": {
               "width": 100,
@@ -1634,8 +1639,8 @@
               "y": 380
             },
             "size": {
-              "width": 100,
-              "height": 80
+              "width": 110,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -1799,8 +1804,8 @@
           },
           {
             "position": {
-              "x": 1370,
-              "y": 460
+              "x": 410,
+              "y": 400
             },
             "size": {
               "width": 110,
@@ -1818,6 +1823,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1901,7 +1907,6 @@
               ]
             },
             "id": "762d5983-0abe-4066-b575-4a6714e109f2",
-            "zIndex": 16,
             "data": {
               "type": "tm.Actor",
               "name": "Administrator",
