@@ -309,19 +309,6 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "7e2ade54-239f-404b-9aed-1293b7fcb400",
-                  "title": "Web Application Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "An attacker might set up a fraudulent web server to phish user credentials or intercept sensitive data.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": "5"
-                },
-                {
                   "id": "c29c52f5-6da6-44bc-a5ca-fd9a488662bf",
                   "title": "Customer Account Spoofing",
                   "status": "Open",
@@ -557,7 +544,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 3,
                 "tampering": 4,
                 "repudiation": 2,
                 "informationDisclosure": 4,
@@ -567,6 +554,8 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
