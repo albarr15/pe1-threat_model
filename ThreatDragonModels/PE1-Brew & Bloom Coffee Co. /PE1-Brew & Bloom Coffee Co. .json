@@ -40,10 +40,9 @@
                 "f68e97cf-3663-42cc-bdae-015c36ab8755",
                 "baf4e81a-4729-4f72-9324-c35e7426412b",
                 "ced22b7d-4ea1-4cdc-ab57-cb35d73964af",
-                "de0243bd-9c84-4e5d-abda-8ecfebb53fac",
-                "3177f5f4-5426-4f00-92c8-6dcfa1656b80",
                 "9a423237-9b7b-4f36-b5f3-3af4c4ddfbf2",
-                "47affeed-50d3-4346-8dcf-0dd0396bdc54"
+                "de0243bd-9c84-4e5d-abda-8ecfebb53fac",
+                "3177f5f4-5426-4f00-92c8-6dcfa1656b80"
               ],
               "containedElements": [
                 "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
@@ -1122,122 +1121,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sends order list",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "f3172a6f-3d3e-4009-8167-130957829a4b"
-              ]
-            },
-            "labels": [
-              "Sends order list"
-            ],
-            "id": "de0243bd-9c84-4e5d-abda-8ecfebb53fac",
-            "source": {
-              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
-            },
-            "target": {
-              "cell": "84f2d496-d71e-4ff0-936b-bc32000f6493",
-              "port": "358687c8-a3a7-4ec3-a2e6-b56bad3638f9"
-            },
-            "vertices": [
-              {
-                "x": 910,
-                "y": -200
-              },
-              {
-                "x": 780,
-                "y": -20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Sends order confirmation & status update",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "f3172a6f-3d3e-4009-8167-130957829a4b"
-              ]
-            },
-            "labels": [
-              "Sends order confirmation & status update"
-            ],
-            "id": "3177f5f4-5426-4f00-92c8-6dcfa1656b80",
-            "source": {
-              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
-            },
-            "target": {
-              "cell": "84f2d496-d71e-4ff0-936b-bc32000f6493",
-              "port": "358687c8-a3a7-4ec3-a2e6-b56bad3638f9"
-            },
-            "vertices": [
-              {
-                "x": 910,
-                "y": -110
-              },
-              {
-                "x": 800,
-                "y": -10
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Displays order confirmation & updated order status",
               "description": "",
               "outOfScope": false,
@@ -1429,6 +1312,14 @@
               {
                 "x": 940,
                 "y": 200
+              },
+              {
+                "x": 910,
+                "y": 200
+              },
+              {
+                "x": 830,
+                "y": 160
               }
             ]
           },
@@ -1560,7 +1451,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Sends an HTTP request",
+              "name": "Sends order list",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1576,21 +1467,91 @@
               ]
             },
             "labels": [
-              "Sends an HTTP request"
+              "Sends order list"
             ],
-            "id": "47affeed-50d3-4346-8dcf-0dd0396bdc54",
+            "id": "de0243bd-9c84-4e5d-abda-8ecfebb53fac",
             "source": {
+              "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
+              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
+            },
+            "target": {
               "cell": "84f2d496-d71e-4ff0-936b-bc32000f6493",
               "port": "358687c8-a3a7-4ec3-a2e6-b56bad3638f9"
             },
-            "target": {
+            "vertices": [
+              {
+                "x": 980,
+                "y": 250
+              },
+              {
+                "x": 840,
+                "y": 250
+              },
+              {
+                "x": 770,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sends order confirmation & status update",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f3172a6f-3d3e-4009-8167-130957829a4b"
+              ]
+            },
+            "labels": [
+              "Sends order confirmation & status update"
+            ],
+            "id": "3177f5f4-5426-4f00-92c8-6dcfa1656b80",
+            "source": {
               "cell": "6685d10e-5d14-46d4-b20a-5ace0f7107ec",
-              "port": "cd6e7691-9fa6-409c-8757-5b1b8dc99390"
+              "port": "f3507a6d-ce61-475c-8eb5-cf0e37d8864c"
+            },
+            "target": {
+              "cell": "84f2d496-d71e-4ff0-936b-bc32000f6493",
+              "port": "358687c8-a3a7-4ec3-a2e6-b56bad3638f9"
             },
             "vertices": [
               {
-                "x": 890,
-                "y": 10
+                "x": 1100,
+                "y": 210
+              },
+              {
+                "x": 920,
+                "y": 330
+              },
+              {
+                "x": 770,
+                "y": 240
               }
             ]
           },
@@ -2424,8 +2385,8 @@
           },
           {
             "position": {
-              "x": 572,
-              "y": 5.000000000000313
+              "x": 582,
+              "y": -10
             },
             "size": {
               "width": 140,
