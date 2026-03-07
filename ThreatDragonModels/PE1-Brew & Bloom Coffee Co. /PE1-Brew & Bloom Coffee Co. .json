@@ -475,6 +475,71 @@
                   "new": false,
                   "number": 31,
                   "score": ""
+                },
+                {
+                  "id": "d4158972-66c3-4c1b-bdeb-067b5479b0a9",
+                  "title": "Web Application Server DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive requests, making it unavailable.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 52,
+                  "score": ""
+                },
+                {
+                  "id": "270ad4b1-9118-4875-9771-037706a765a6",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.\n",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 53,
+                  "score": ""
+                },
+                {
+                  "id": "30f4bd8f-1c30-4d1b-b0b3-5d2e9bb73185",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to Barista, Manager, or Administrator functionalities. ",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 55,
+                  "score": ""
+                },
+                {
+                  "id": "6029ce70-b60a-477f-abcf-a2ea2712ac3b",
+                  "title": "Barista/Manager to Administrator Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A Barista or Manager could exploit a vulnerability to gain Administrator privileges.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 56,
+                  "score": ""
+                },
+                {
+                  "id": "3f1521a9-f915-467b-8e7f-f98d9ac2aa7a",
+                  "title": "Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user’s account within the same privilege level.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 57,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -482,8 +547,8 @@
                 "tampering": 4,
                 "repudiation": 2,
                 "informationDisclosure": 4,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "denialOfService": 2,
+                "elevationOfPrivilege": 3
               }
             }
           },
@@ -2220,13 +2285,26 @@
                   "new": false,
                   "number": 32,
                   "score": ""
+                },
+                {
+                  "id": "b3027ae9-e579-48a2-9c60-8e10b233c11d",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database, making it unresponsive.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 54,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 3,
                 "repudiation": 2,
                 "informationDisclosure": 3,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             },
             "children": [
@@ -2766,13 +2844,6 @@
                 "spoofing": 0,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
